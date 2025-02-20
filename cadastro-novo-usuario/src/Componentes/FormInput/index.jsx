@@ -15,9 +15,14 @@ const Label = styled.label `
 const Input = styled.input `
 	width: 100%;
 	box-sizing: border-box;
-	padding: 0.15em;
+	padding: 0.25em;
 	border-color: #FEFAE0;
 	border-radius: 0.15em;
+
+	&&:focus {
+		outline: none;
+		border-color: #606C38;
+	}
 `;
 
 const FormInput = ({id, tipo, label, placeholder}) => {
