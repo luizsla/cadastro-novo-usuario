@@ -10,7 +10,8 @@ const Form = styled.form`
 	justify-content: center;
 	padding: 1em;
 	background-color: #DDA15E;
-	border-radius: 0.5em;
+	box-shadow: 0 0 0.1em #BC6C25;
+	width: 18%;
 `;
 
 const EstiloLink = styled(Link) `

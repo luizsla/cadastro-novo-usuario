@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Grupo = styled.div `
 	margin-bottom: 1em;
+	width: 100%;
 `;
 
 const Label = styled.label `
@@ -13,7 +14,8 @@ const Label = styled.label `
 
 const Input = styled.input `
 	width: 100%;
-	padding: 0.2em;
+	box-sizing: border-box;
+	padding: 0.15em;
 	border-color: #FEFAE0;
 	border-radius: 0.15em;
 `;
