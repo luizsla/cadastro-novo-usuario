@@ -11,12 +11,19 @@ const Label = styled.label `
 	display: block;
 `;
 
+const Input = styled.input `
+	width: 100%;
+	padding: 0.2em;
+	border-color: #FEFAE0;
+	border-radius: 0.15em;
+`;
+
 const FormInput = ({id, tipo, label, placeholder}) => {
     return (
 			<>
 				<Grupo>
 					<Label htmlFor={id}>{label}:</Label>
-					<input type={tipo} id={id} placeholder={placeholder} />
+					<Input type={tipo} id={id} placeholder={placeholder} />
 				</Grupo>
 			</>
     );

@@ -13,6 +13,20 @@ const Form = styled.form`
 	border-radius: 0.5em;
 `;
 
+const EstiloLink = styled(Link) `
+	color: #606C38;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 0.3em;
+	text-align: left;
+
+	&&:hover {
+		text-decoration: underline;
+		color: #283618;
+	}
+`;
+
 const FormLogin = () => {
 	return (
 		<>
@@ -21,8 +35,8 @@ const FormLogin = () => {
 				<FormInput tipo="password" id="id-senha" label="Senha" placeholder="******" />
 
 				<FormButton tipo="submit" texto="Entrar" />
-				<Link to='/formulario-cadastro'>Cadastre-se</Link>
-				<Link to='/formulario-recuperacao'>Esquecei minha senha</Link>
+				<EstiloLink to='/formulario-cadastro'>Cadastre-se</EstiloLink>
+				<EstiloLink to='/formulario-recuperacao'>Esquecei minha senha</EstiloLink>
 			</Form>
 		</>
 	);
