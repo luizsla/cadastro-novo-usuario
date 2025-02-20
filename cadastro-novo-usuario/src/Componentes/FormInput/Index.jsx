@@ -1,8 +1,9 @@
 
-const FormInput = () => {
+const FormInput = ({id, tipo, label, placeholder}) => {
     return (
 			<>
-				<input type="text" />
+				<label for={id}>{label}:</label>
+				<input type={tipo} id={id} placeholder={placeholder} />
 			</>
     );
 }

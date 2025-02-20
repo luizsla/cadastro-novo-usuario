@@ -1,3 +1,4 @@
+import FormLogin from "./Componentes/FormLogin";
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
         <title>Document</title>
       </head>
       <body>
-        
+        <FormLogin />
       </body>
       </html>
     </>
