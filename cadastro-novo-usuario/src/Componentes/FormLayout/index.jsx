@@ -8,7 +8,7 @@ const FormLayout = styled.form`
 	padding: 1em;
 	background-color: #DDA15E;
 	box-shadow: 0 0 0.1em #BC6C25;
-	width: 18%;
+	width: ${props => props.largura || '20%'};
 `;
 
 
