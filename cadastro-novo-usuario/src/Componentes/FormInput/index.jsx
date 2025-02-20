@@ -1,9 +1,23 @@
+import styled from "styled-components";
+
+const Grupo = styled.div `
+	margin-bottom: 1em;
+`;
+
+const Label = styled.label `
+	color: #FEFAE0;
+	font-weight: bolder;
+	margin-bottom: 0.5em;
+	display: block;
+`;
 
 const FormInput = ({id, tipo, label, placeholder}) => {
     return (
 			<>
-				<label htmlFor={id}>{label}:</label>
-				<input type={tipo} id={id} placeholder={placeholder} />
+				<Grupo>
+					<Label htmlFor={id}>{label}:</Label>
+					<input type={tipo} id={id} placeholder={placeholder} />
+				</Grupo>
 			</>
     );
 }
