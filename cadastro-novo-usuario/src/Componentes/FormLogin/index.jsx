@@ -1,5 +1,5 @@
 import FormButton from "../FormButton";
-import FormInput from "../FormInput/Index";
+import FormInput from "../FormInput";
 import Link from "../Link";
 
 const FormLogin = () => {
