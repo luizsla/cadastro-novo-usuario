@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import FormButton from "../FormButton";
 import FormInput from "../FormInput";
-import Link from "../Link";
 
 const FormLogin = () => {
 	return (
@@ -10,7 +10,8 @@ const FormLogin = () => {
 				<FormInput tipo="password" id="id-senha" label="Senha" placeholder="******" />
 
 				<FormButton tipo="submit" texto="Entrar" />
-				<Link />
+				<Link to='/formulario-cadastro'>Cadastre-se</Link>
+				<Link to='/formulario-recuperacao'>Esquecei minha senha</Link>
 			</form>
 		</>
 	);
