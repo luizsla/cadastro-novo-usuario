@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const CustomLink = styled(Link) `
-	color: #606C38;
+	color: ${props => props.cor || '#606C38'};
 	text-decoration: none;
 	display: inline-block;
 	width: 100%;
