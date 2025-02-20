@@ -11,12 +11,12 @@ const Button = styled.button `
   margin-bottom: 1em;
 `;
 
-const formButton = ({tipo, texto}) => {
+const FormButton = ({tipo, texto}) => {
   return (
     <>
-      <Button type={tipo} className="form-button">{texto}</Button>
+      <Button type={tipo}>{texto}</Button>
     </>
   )
 }
 
-export default formButton;
+export default FormButton;
